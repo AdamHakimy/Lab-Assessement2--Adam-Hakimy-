@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/GameProfile.css">
+		<title>Profile - Gaming Bank</title>
+	</head>
+
+	
+	<body class="special">
+		<header>
+			<img src= "./img/gamingbanklogo.png" width="60" height="60">
+			<h1>
+				<font color="#89CFF0">Gaming Bank </font>
+			</h1>
+			<p>Your Ultimate Destination for Gaming</p>
+            <div class="search-container">
+                <form action="php/adminsearch.php" method="post">
+                    <input type="text" placeholder="Search for user..." name="username">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+		</header>
+		<nav>
+			<a href="./GamingBank2.html">Home</a>
+			<a href="./GameDeals.html">Deals</a>
+			<a href="./GameCart.html">Cart</a>
+			<a href="./GameProfile.html">Profile</a>
+		</nav>
+		<br>
+		<br>
+		<div class="container" align="center">
+			<form action="register.php" method="post" align="left">
+				<center>
+					<input type="text" nane="Uname" placeholder="Username">
+					<input type="email" name="email" placeholder="Email">
+					<input type="password" name="passID" placeholder="Password">
+					<br>
+					<br>
+					<font color="grey" size="-1">Date of birth: </font>
+					<br>
+					<input name="Day" type="text" class="mini" placeholder="?? / ?? / ????">
+					<br>
+					<br>
+					<input type="radio" id="male" name="gender">
+					<label for="male">Male</label>
+					<input type="radio" id="female" name="gender">
+					<label for="female">Female</label>
+					<br>
+					<br>
+					<input type="submit" value="Save Changes">
+				</center>
+			</form>
+		</div>
+		<footer> &copy; 2024 Gaming Bank. All rights reserved. </footer>
+	</body>
+</html> 

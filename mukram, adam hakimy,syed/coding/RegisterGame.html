@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register</title>
+		<link rel="stylesheet" href="./css/GameProfile.css">
+	</head>
+	<body>
+		<div class="container" align="center">
+			<img src="./img/gamingbanklogo.png" width="60" height="60">
+			<h1>Gaming Bank</h1>
+			<p>Enter the following</p>
+			<form action="./php/GamingBankData.php" method="post" align="left">
+				<center>
+					<input name="Uname" type="text" placeholder="Username"> 
+          <input type="email" name="email" placeholder="Email"> 
+          <input type="password" name="passID" placeholder="Password"> <br><br>
+					<font color="grey" size="-1">Date of birth: </font> <br> <input name="Day" type="text" class="mini" placeholder="Day"> 
+					<select name="Month" class="mini grey">
+						<option>January</option>
+						<option>February</option>
+						<option>March</option>
+						<option>April</option>
+						<option>May</option>
+						<option>June</option>
+						<option>July</option>
+						<option>August</option>
+						<option>September</option>
+						<option>October</option>
+						<option>November</option>
+						<option>December</option>
+					</select>
+					<input name="Year" type="text" class="mini" placeholder="Year"> 
+          <br><br>
+           <input type="radio" id="male" name="gender"><label for="male">Male</label> 
+           <input type="radio" id="female" name="gender"><label for="female">Female</label> 
+					<textarea name="desc" rows="5" placeholder="Describe yourself here..."></textarea>
+					<input type="submit" value="Submit"> <input type="reset" value="Reset">
+				</center>
+			</form>
+		</div>
+	</body>
+</html>
